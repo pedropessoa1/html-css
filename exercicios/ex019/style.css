@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+ em HTML é id = em CSS é # (so pode um elemento)
+ em HTML é class = em CSS é . (pode varios elementos)
+
+*/
+
+body{
+    background-color: rgb(205, 255, 203);
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(4, 109, 0);
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(4, 109, 0);
+    color: white;
+    border-radius: 10px;
+}
+#basica {
+    color: blue;
+    font-weight: bold;
+}
+.basico{
+    color: rgb(38, 0, 255);
+    font-weight: bold; /*FONTE EM NEGRETO*/
+}
+.intermediario{
+    color: rgb(216, 230, 21);
+}
+h2.avancado{
+    color: rgb(255, 0, 0); /*SE EU COLOCAR H2.AVANCADO ELE SO VAI APLICAR A CLASS DENTRO DO H2 Q FOI COLOCADO*/
+}
+.destaque {
+    color: rgba(248, 244, 16, 0.459);
+    background-color: cadetblue;
+}
+
+h2{
+    color: rgb(60, 85, 59);
+    
+}
+
