@@ -1,5 +1,5 @@
 # HTML-CSS
- HTML e CSS Curso em Video EE
+ HTML e CSS Curso em Video
 
  Estou estudando HTML e CSS
 
