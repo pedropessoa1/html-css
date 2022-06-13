@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body> 
+    <h1> Imagem dinamica</h1>
+    <p>Tente abrir esse site em varias dispositivos difrentes ou simplesmente aumente e diminua o tamnho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+       
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+    
+        <img src="imagens/foto-g.png" alt="Imagens frexivel"> <!--SEMPRE ESTAR ESSA ORDEM -->
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5
+    
+    </p>
+    <audio src="midia/musica.mp3" controls autoplay ></audio> <!---NÃO É BOM FAZER ASSIM-->
+    <!--MP3 WAV OGG-->
+    <audio preload="metadata" controls> <!--Melhor jeito de fazer é esse-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg"  type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelismente o seu navegador não consegue reproduzir audio. <a href="midia/guanacast-33.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <h1>Reproduzindo Videos</h1>
+    <p>vamos aprendera reproduzir vides em HTML5</p>
+    
+</body>
+</html>
