@@ -38,11 +38,11 @@
             background-color: rgb(90, 90, 90); /*FOI CRIADO PARA FIXAR A BARRA DE CIMA ONDE TEM "ESTADO" E "POPULAÇÃO" */
         }
 
-        tbody > tr:nth-child(odd){ /*EFEITO ZEBRADO PODE SER IMPAR E PAR TBM COMO IMPAR = odd E PAR = even ou posso usar o 2n no lugar do odd*/
+        tbody > tr:nth-child(odd){ /*CASO O FUNDO DO SITE SEJA DE OUTRA COR, PODE COLOCAR NOS IMPAR (odd) OUTRA COR */
            background-color: white; 
            
         }
-        tbody > tr:nth-child(even){
+        tbody > tr:nth-child(even){ /*EFEITO ZEBRADO PODE SER IMPAR E PAR TBM COMO IMPAR = odd, E PAR = even, ou posso usar o 2n no lugar do odd que quer dizer "DE DUAS EM DUAS ELE VAI COLOCANDO ESSA COR"*/
             background-color: lightgray;
         }
         td.num{
@@ -62,10 +62,12 @@
             TR, TD, TH
     -->
     <table>
+        <caption>População das Unidaddes Federativas</caption>
         <thead>
+           
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!--col = coluna e row linhas-->
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
 
         </thead>
@@ -184,7 +186,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
